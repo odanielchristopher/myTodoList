@@ -1,0 +1,32 @@
+@import '../variables';
+
+.todo-list__header {
+  width: 100%;
+  height: 12.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: $black100;
+
+  .todo-list__header_logo {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    .todo-list__header_logo-img {
+      height: 3.5rem;
+    }
+
+    .todo-list__header_logo-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+
+      background: linear-gradient(to bottom right, #4158D0 0%, #C850C0 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

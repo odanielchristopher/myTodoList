@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Todo List</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/header/index.css">
+  <link rel="stylesheet" href="./assets/css/main/index.css">
+  <link rel="stylesheet" href="./assets/css/main/header/index.css">
+  <link rel="stylesheet" href="./assets/css/main/list/index.css">
+  <link rel="stylesheet" href="./assets/css/main/list/items/index.css">
+
+  <script src="./assets/js/index.js" defer></script>
+  
+</head>
+  <section class="todo-list">
+    <header class="todo-list__header">
+      <div class="todo-list__header_logo">
+        <img class="todo-list__header_logo-img" src="./assets/imgs/rocket.svg" alt="logotipo">
+
+        <h1 class="todo-list__header_logo-title">
+          TodoList
+        </h1>
+      </div>
+    </header>
+
+    <main class="todo-list__main">
+      <header class="todo-list__main_header">
+        <input type="text" placeholder="Adicione uma nova tarefa" class="todo-list__main_header-input">
+        <button class="todo-list__main_header-btn">Criar</button>
+      </header>
+
+      <div class="todo-list__main_list">
+        <header class="todo-list__main_list-header">
+          <div class="todo-list__main_list-header--counter">
+            <span class="todo-list__main_list-header--counter-title">
+              Tarefas criadas
+            </span>
+
+            <span class="todo-list__main_list-header--counter-number" data-number="length">0</span>
+          </div>
+          <div class="todo-list__main_list-header--counter">
+            <span class="todo-list__main_list-header--counter-title">
+              Concluídas
+            </span>
+
+            <span class="todo-list__main_list-header--counter-number" data-number="counter">0 de 0</span>
+          </div>
+        </header>
+
+        <ul class="todo-list__main-list-content">
+          <!-- <div class="todo-list__main-list-content--text">
+            <span class="todo-list__main-list-content--text-info">
+              Você ainda não tem tarefas cadastradas
+            </span>
+
+            <span class="todo-list__main-list-content--text-desc">
+              Crie tarefas e organize seus itens a fazer
+            </span>
+          </div> -->
+
+          <!-- <li class="todo-list__main-list-content--item">
+            <div class="main__list-content_item-body">
+              <input type="checkbox">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod asperiores eligendi autem rem non nulla, voluptatem, tenetur nemo laborum quisquam beatae animi dolores. Maiores, perferendis quia doloribus nostrum a architecto.</p>
+            </div>
+
+            <button class="main__list-content_item-buttons--delete">
+              <img src="./assets/imgs/trash.svg" alt="">
+            </button>
+          </li>
+          <li class="todo-list__main-list-content--item">
+            <div class="main__list-content_item-body">
+              <input type="checkbox">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod asperiores eligendi autem rem non nulla, voluptatem, tenetur nemo laborum quisquam beatae animi dolores. Maiores, perferendis quia doloribus nostrum a architecto.</p>
+            </div>
+
+            <button class="main__list-content_item-buttons--delete">
+              <img src="./assets/imgs/trash.svg" alt="">
+            </button>
+          </li>
+          <li class="todo-list__main-list-content--item">
+            <div class="main__list-content_item-body">
+              <input type="checkbox">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod asperiores eligendi autem rem non nulla, voluptatem, tenetur nemo laborum quisquam beatae animi dolores. Maiores, perferendis quia doloribus nostrum a architecto.</p>
+            </div>
+
+            <button class="main__list-content_item-buttons--delete">
+              <img src="./assets/imgs/trash.svg" alt="">
+            </button>
+          </li> -->
+        </ul>
+      </div>
+    </main>
+  </section>
+<body>
+  
+
+
+</body>
+
+</html>

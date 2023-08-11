@@ -1,0 +1,16 @@
+.todo-list__main {
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+  transform: translateY(-1.875rem);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+@media (max-width: 550px) {
+  .todo-list__main {
+    transform: translateY(-3.25rem);
+    width: 100%;
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.todo-list__main-list-content--item {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 1rem;
+  background: #333;
+  border-radius: 0.5rem;
+}
+.todo-list__main-list-content--item .main__list-content_item-body {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.todo-list__main-list-content--item .main__list-content_item-body input {
+  /* Tamanho e borda padrão */
+  width: 1.5rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #4158D0;
+  background-color: transparent;
+  border-radius: 50%;
+  /* Ocultar visualmente o input padrão */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+.todo-list__main-list-content--item .main__list-content_item-body input:checked {
+  /* Estilo quando o input estiver selecionado */
+  border-color: #4158D0;
+  background-color: #4158D0;
+  background-image: url("../../../../imgs/check.svg");
+  background-position: center;
+  background-size: cover;
+}
+.todo-list__main-list-content--item .main__list-content_item-body input:checked ~ p {
+  text-decoration: line-through;
+  color: #808080;
+}
+.todo-list__main-list-content--item .main__list-content_item-body p {
+  max-width: 485px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  font-size: 0.875rem;
+}
+.todo-list__main-list-content--item .main__list-content_item-buttons--delete {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 2rem;
+}
+.todo-list__main-list-content--item .main__list-content_item-buttons--delete img {
+  width: 2rem;
+  height: 2rem;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,73 @@
+@import '../../variables';
+
+.todo-list__main_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .todo-list__main_list-header {
+    display: flex;
+    justify-content: space-between;
+
+    .todo-list__main_list-header--counter {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      flex-shrink: 0;
+
+      .todo-list__main_list-header--counter-title {
+        font-size: .875rem;
+        font-weight: 700;
+        color: $blue200;
+      }
+
+      .todo-list__main_list-header--counter-number {
+        font-size: .875rem;
+        font-weight: 700;
+
+        padding: 0.125rem .5rem;
+
+        background: $gray400;
+        border-radius: 999px;
+      }
+    }
+  }
+
+  .todo-list__main-list-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 244px;
+
+    gap: .75rem;
+
+    .todo-list__main-list-content--text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: auto;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 3.5rem;
+        height: 3.5rem;
+        background: url(../../../imgs/Clipboard.svg);
+
+        margin-bottom: 1rem;
+      }
+
+      .todo-list__main-list-content--text-info, .todo-list__main-list-content--text-desc {
+        font-size: 1rem;
+        line-height: 140%;
+        color: $gray300;
+      }
+
+      .todo-list__main-list-content--text-info {
+        font-weight: 700;
+      }
+    }
+  }
+}
